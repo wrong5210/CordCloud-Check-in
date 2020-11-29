@@ -11,15 +11,15 @@ PROXIES = {
 
 # 登录CordCloud的帐号密码
 LOGIN_FORM = {
-    "email": os.getenv("CC_EMAIL", ""),
-    "passwd": os.getenv("CC_PASSWD", ""),
+    "email": os.getenv("CC_EMAIL", "SECRET_EMAIL"),
+    "passwd": os.getenv("CC_PASSWD", "SECRET_PASSWD"),
     "code": "",
 }
 
 # server酱配置(非必填)
 SERVER_CHAN_CONFIG = {
-    "enable": False,  # True打开
-    "key": os.getenv("SERVER_CHAN_KEY", "")
+    "enable": True,  # True打开
+    "key": os.getenv("SERVER_CHAN_KEY", "SECRET_SERVER_CHAN")
 }
 
 # 日志文件位置（可以不改）
