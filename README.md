@@ -4,6 +4,18 @@
 CordCloud签到脚本一键运行签到，每次签到50到400MB的流量，一年就是17.82G到142.57G的流量，  
 也不少呢，总是忘记签到，所以写一个脚本可以一键签到，把这个脚本配置到开机启动或者定时任务就不用自己操作了。
 
+# 部署Github Action
+## 1.Fork仓库
+* 项目地址：[github/CordCloud-Check-in](https://github.com/Wo1framalpha/CordCloud-Check-in)
+* 点击右上角`Fork`到自己的账号下
+## 2. 添加 邮箱 和 密码 至 Secrets
+* 回到项目页面，依次点击`Settings`-->`Secrets`-->`New secret`
+> ![new_secret.png](images/new_secret.png)
+* 依次建立名为 `EMAIL` 和 `PASSWD` 的 secret，值分别为登陆`CordCloud`时输入的`账户`和`密码`，最后点击`Add secret`
+> ![set_secret.png](images/set_secret.png)
+* 建立`secrets`完成后`secrets`页面应如下
+> ![secrets.png](images/secrets.png)
+# 本地运行
 ## 安装
 ### Windows
 - [直接点我下载](https://github.com/DeaglePC/CordCloud-Check-in/releases/download/1.0/cc_auto_check_in-win-64.zip)
@@ -68,7 +80,7 @@ SERVER_CHAN_CONFIG = {
     "key": os.getenv("SERVER_CHAN_KEY", "")
 }
 ```
-![server_chan.jpg](server_chan.jpg)
+![server_chan.jpg](images/server_chan.jpg)
 
 
 ## 运行
@@ -90,4 +102,4 @@ chmod +x cc_auto_check_in.sh
 配置crontab
 
 ## 效果
-![ec.png](ec.png)
+![ec.png](images/ec.png)
