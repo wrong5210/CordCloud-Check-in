@@ -55,7 +55,7 @@ class CordCloudClient:
 
     def __init__(self, login_form, host="", proxies=None, server_chan_config=None, email_config=None):
         self._login_form = login_form
-        self._host = host if host else "cordcloud.site"
+        self._host = host if host else "a.luxury"
         self._sess = requests.session()
 
         self.proxies = proxies
