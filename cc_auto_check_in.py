@@ -33,7 +33,7 @@ logger = logging.getLogger()
 logger.addHandler(file_handler)
 logger.setLevel(logging.INFO)
 
-NOTIFY_MSG_PREFIX = "[CordCloud 续命通知]"
+NOTIFY_MSG_PREFIX = "[几鸡 续命通知]"
 
 
 class ServerChan:
